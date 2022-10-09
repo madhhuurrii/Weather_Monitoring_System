@@ -10,7 +10,25 @@
 </head>
 <body>
     <h1 class="text-center pt-3">Weather Monitoring System</h1>
+     <div class="container p-5">
+        <h2 class="text-center">Live Dashboard</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <title>Rainfall:</title>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1881185/widgets/529584"></iframe>
+            </div>
+            <div class="col-md-4">
+                <title>Temperature:</title>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1881185/widgets/529585"></iframe>
+            </div>
+            <div class="col-md-4">
+                <title>Humidity:</title>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1881185/widgets/529586"></iframe>
+            </div>
+        </div>
+    </div>
     <div class="container p-5">
+         <h2 class="text-center">Analytics</h2>
         <div class="row m-3">
             <div class="col-md-6">
                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1881185/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=20&type=line"></iframe>
